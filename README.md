@@ -25,4 +25,15 @@ Escribe un programa, utilizando para ello el paradigma de POO, que genere un nú
 2. Se determina si el número es par o impar y se lanza una excepción con el correspondiente mensaje para indicarlo (se limitará a mostrar el mensaje asociado a la excepción capturada).
 
 El resultado debe ser similar a esta captura de pantalla:
+
 <img width="344" alt="image" src="https://user-images.githubusercontent.com/110301198/225972671-a1ada22e-6acd-4058-b3a4-52368d9c0885.png">
+
+# - Ejercicio 4 -
+Escribe un programa, utilizando para ello el paradigma de POO, que nos permita realizar cálculos simples (suma, resta, multiplicación, potencia, raíz cuadrada, raíz cubica y división). El programa ha de estar preparado para gestionar los posibles errores de calculo. Has de utilizar para ello el control de excepciones de JAVA.
+
+**Recomendaciones:**
+1. Utiliza siempre que sea posible las Excepciones definidas en la API de Java 8.
+2. Puedes utilizar interfaz visual Scanner o JOptionPane.
+3. Estructura correctamente el código en diferentes packages.
+
+
