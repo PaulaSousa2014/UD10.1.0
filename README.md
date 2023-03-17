@@ -1,6 +1,17 @@
-# UD10 Ejercicio 1 - Java Exception -
+# UD10  - Java Exception 
+
+# [X] - Ejercicio 1 -
 Escribe un programa, utilizando para ello el paradigma de POO, que juegue con el usuario a adivinar un número. Debe cumplir los siguientes requerimientos:
 - [X] El ordenador debe generar un número entre 1 y 500, y el usuario tiene que intentar adivinarlo.
 - [X] Cada vez que el usuario introduce un valor, el ordenador debe decirle al usuario si el numero que tiene que adivinaar es mayor o menor que el que ha introducido el usuario.
 - [X] Cuando consiga adivinarlo, debe indicárselo e imprimir en pantalla el número de veces que el usuario ha intentado adivinar el número.
-- [ ] Si el usuario introduce algo que no es un numero, debe indicarlo en pantalla, y al contarlo como un intento indicando que no ha conseguido reconocer la entrada lanzando la excepción **InputMismatchException**.
+- [X] Si el usuario introduce algo que no es un numero, debe indicarlo en pantalla, y al contarlo como un intento indicando que no ha conseguido reconocer la entrada lanzando la excepción **InputMismatchException**. En este caso, al usar JOptionPane, el error a controlar era distinto, de manera que he usando la excepcion **NumberFormatException**.
+
+# [ ]-Ejercicio 2 -
+Escribe un programa, utilizando para ello el paradigma de POO, que lance y capture una excepción customizada. Crea para ello una package diferente que puedas reutilizar para el resto de tus proyectos.
+**Recomendaciones:**
+El programa abre un bucle * *try{}* * en el que comienza mostrando un mensaje por pantalla. A continuación, crea un objeto de la clase * *Exception* * , indicando en su constructor un mensaje explicativo.
+
+El resultado debe ser similar a esta captura de pantalla:
+
+<img width="342" alt="image" src="https://user-images.githubusercontent.com/110301198/225889214-80b3e934-1acf-460d-bf86-ef7e0c361913.png">
