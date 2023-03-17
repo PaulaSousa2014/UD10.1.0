@@ -19,10 +19,10 @@ public class MyExceptionEx3 extends Exception{
 
 		switch (exceptionCode) {
 		case 1:
-			message = "El numero introducido no es par.";
+			message = "Es par.";
 			break;
 		case 2:
-			message = "El numero introducido esta fuera del rango solicitado.";
+			message = "Els impar.";
 			break;
 		}
 
