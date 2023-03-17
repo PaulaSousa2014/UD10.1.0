@@ -1,20 +1,14 @@
 package customizedException;
 
-/*
- * 
- * Creación de una clase con una excepción personalizada.
- * 
- * */
-
-public class MyException extends Exception {
+public class MyExceptionEx3 extends Exception{
 	private int exceptionCode;
 
-	public MyException(int error) {
+	public MyExceptionEx3(int error) {
 		super();
 		this.exceptionCode = error;
 	}
 
-	public MyException() {
+	public MyExceptionEx3() {
 		super();
 	}
 
