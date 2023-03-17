@@ -8,54 +8,63 @@ public class Operaciones {
 
 	Utilidades utl = new Utilidades();
 
-	public double realizarOperacion(int seleccion) {
+	public void realizarOperacion(int seleccion) {
+
 		switch (seleccion) {
 		case 1:
 			System.out.println("Has seleccionado sumar.");
 			num1 = utl.solicitarNum();
 			num2 = utl.solicitarNum();
-			return num1 + num2;
-
+			System.out.println(num1 + num2);
+			break;
 		case 2:
 			System.out.println("Has seleccionado restar.");
 			num1 = utl.solicitarNum();
 			num2 = utl.solicitarNum();
-			return num1 - num2;
-
+			System.out.println(num1 - num2);
+			break;
 		case 3:
 			System.out.println("Has seleccionado multiplicación.");
 			num1 = utl.solicitarNum();
 			num2 = utl.solicitarNum();
-			return num1 * num2;
+			System.out.println(num1 * num2);
+			break;
 		case 4:
 			System.out.println("Has seleccionado división.");
 			num1 = utl.solicitarNum();
 			num2 = utl.solicitarNum();
-			return num1 / num2;
+			System.out.println(num1 / num2);
+			break;
 		case 5:
 			System.out.println("Has seleccionado calcular potencia.");
 			num1 = utl.solicitarNum();
 			num2 = utl.solicitarNum();
-			return Math.pow(num1, num2);
+			System.out.println(Math.pow(num1, num2));
+			break;
 		case 6:
 			System.out.println("Has seleccionado calcular raíz cuadrada.");
 			num1 = utl.solicitarNum();
-			return Math.sqrt(num1);
+			System.out.println(Math.sqrt(num1));
+			break;
 		case 7:
 			System.out.println("Has seleccionado calcular raíz cubica.");
 			num1 = utl.solicitarNum();
-			return Math.cbrt(num1);
+			System.out.println(Math.cbrt(num1));
+			break;
 		case 8:
 			utl.imprimirMenu();
-		case 9:
-			System.out.println("Gracias por usar nuestra calculadora.");
 			break;
+		case 9:
+			break;
+
 
 		// Si no entra ninguna opcion saltara el error TypeNotPresentExcetion
 		default:
-			throw new TypeNotPresentException("Operación no válida. ", new Throwable());
+			System.out.println("No has introducido una opción valida.");
 		}
-		return resultado;
+
+		
+
 	}
 
 }

@@ -11,20 +11,25 @@ public class Utilidades {
 	public void abrirScanner() {
 
 		Scanner sc = new Scanner(System.in);
-		System.out.println("************BIENVENIDO A LA CALCULADORA*************\n");
-		imprimirMenu();
+		System.out.println(""
+				+ "===================================================\n"
+				+ "************BIENVENIDO A LA CALCULADORA************\n"
+				+ "===================================================");
+		
 
 	}
 
-	public int imprimirMenu() {
+	public void imprimirMenu() {
 
 		System.out.println("Menú de operaciones disponibles:\n" + "1. Sumar;\n" + "2. Restar;\n" + "3. Multiplicar;\n"
 				+ "4. Dividir;\n" + "5. Calcular potencia;\n" + "6. Calcular raiz cuadrada;\n" + "7. Calcular raiz cúbica;\n"
 				+ "8. Imprimir menú de operaciones disponibles;\n" + "9. Salir del programa.\n");
+	}
+	
+	public int seleccionarOpcion() {
+		System.out.println("Seleccione una opción del menú: ");
 
-		System.out.println("Introduzca el número de la opcion que deseas realizar: ");
-
-		return operacion = Integer.parseInt(sc.nextLine());
+		return  Integer.parseInt(sc.nextLine());
 		
 
 	}
@@ -32,6 +37,14 @@ public class Utilidades {
 	public int solicitarNum() {
 		System.out.println("Introduzca un numero: ");
 		return Integer.parseInt(sc.nextLine());
+	}
+	
+	public void cerrarScanner() {
+		System.out.println(""
+				+ "==================================================\n"
+				+ "********Gracias por usar la calculadora.**********\n"
+				+ "==================================================");
+		sc.close();
 	}
 
 }
