@@ -1,10 +1,12 @@
 package ejercicio4;
 
+import utilidades.UtilidadesEj4;
+
 public class MainApp4 {
 
 	public static void main(String[] args) {
 
-		Utilidades utl = new Utilidades();
+		UtilidadesEj4 utl = new UtilidadesEj4();
 		Operaciones op = new Operaciones();
 		int opcion;
 

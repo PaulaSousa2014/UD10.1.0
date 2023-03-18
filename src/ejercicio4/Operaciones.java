@@ -1,12 +1,14 @@
 package ejercicio4;
 
+import utilidades.UtilidadesEj4;
+
 public class Operaciones {
 
 	int num1;
 	int num2;
 	double resultado;
 
-	Utilidades utl = new Utilidades();
+	UtilidadesEj4 utl = new UtilidadesEj4();
 
 	public void realizarOperacion(int seleccion) {
 
