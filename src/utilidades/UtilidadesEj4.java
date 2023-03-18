@@ -2,6 +2,12 @@ package utilidades;
 
 import java.util.Scanner;
 
+/*
+ * 
+ * Creamos la clase utilidades para realizar la interaccion con el usuario a traves de Scanner
+ * 
+ * */
+
 
 public class UtilidadesEj4 {
 	
@@ -11,7 +17,9 @@ public class UtilidadesEj4 {
 		int operacion;
 		
 		Scanner sc = new Scanner(System.in);
-
+		
+		
+		//Creamos un metodo para inicializar el programa con un mensaje de bienvenida
 		public void abrirScanner() {
 
 			//He imprimido algunos mensajes con color  utilizando las secuencias de escape ANSI 
@@ -23,6 +31,8 @@ public class UtilidadesEj4 {
 
 		}
 
+		//Creamos un metodo para imprimir el menu por separado para que pueda ser llamado 
+		//por el usuario las veces que necesite
 		public void imprimirMenu() {
 
 			System.out.println("\033[32mMenú de operaciones disponibles:\n" 
@@ -37,6 +47,8 @@ public class UtilidadesEj4 {
 								+ "9. Salir del programa.\033[0m\n");
 		}
 		
+		//Creamos un metodo para seleccionar la opcion del menu y controlamos las excepciones
+		//por introducir un formato no numerico
 		public int seleccionarOpcion() {
 			
 			int seleccion=9;
@@ -52,6 +64,8 @@ public class UtilidadesEj4 {
 
 		}
 		
+		//Creamos un metodo para solicitar un opeerando y controlamos la excepcion por una posible
+		//introduccion de dato no numerico
 		public int solicitarNum() {
 			int num=0;
 			
@@ -65,6 +79,8 @@ public class UtilidadesEj4 {
 			return num;
 		}
 		
+		//Creamos un metodo para cerrar el programa para que el usuario pueda llamarlo cuando ya
+		//no quiera operar
 		public void cerrarScanner() {
 			System.out.println(""
 					+ "\033[33m==================================================\033[0m\n"

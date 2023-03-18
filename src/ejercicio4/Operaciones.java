@@ -2,14 +2,22 @@ package ejercicio4;
 
 import utilidades.UtilidadesEj4;
 
+/*
+ * 
+ * Clase creada para realizar la lógica de la APP
+ * 
+ * */
+
 public class Operaciones {
 
 	int num1;
 	int num2;
 	double resultado;
 
+	//Utilizaremos utilidades para hacer la interactividad con el usuario
 	UtilidadesEj4 utl = new UtilidadesEj4();
 
+	//Creamos un metodo de operaciones donde con un switch saltaremos a la seleccion del usuario
 	public void realizarOperacion(int seleccion) {
 
 		switch (seleccion) {
@@ -32,6 +40,7 @@ public class Operaciones {
 			System.out.println(num1 * num2);
 			break;
 		case 4:
+			//Manejamos la excepcion que puede saltar en caso de división con numero 0
 			try {
 				System.out.println("Has seleccionado división.");
 				num1 = utl.solicitarNum();
@@ -64,7 +73,7 @@ public class Operaciones {
 		case 9:
 			break;
 
-		// Si no entra ninguna opcion saltara el error TypeNotPresentExcetion
+		// Si no entra ninguna opcion saltara aviso pero seguira con el programa
 		default:
 			System.out.println("No has introducido una opción valida.");
 		}
