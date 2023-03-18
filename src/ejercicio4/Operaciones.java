@@ -32,10 +32,15 @@ public class Operaciones {
 			System.out.println(num1 * num2);
 			break;
 		case 4:
-			System.out.println("Has seleccionado división.");
-			num1 = utl.solicitarNum();
-			num2 = utl.solicitarNum();
-			System.out.println(num1 / num2);
+			try {
+				System.out.println("Has seleccionado división.");
+				num1 = utl.solicitarNum();
+				num2 = utl.solicitarNum();
+
+				System.out.println(num1 / num2);
+			} catch (ArithmeticException e) {
+				System.out.println("Esta operación no puede ser realizada: " + e.getMessage());
+			}
 			break;
 		case 5:
 			System.out.println("Has seleccionado calcular potencia.");
@@ -59,13 +64,10 @@ public class Operaciones {
 		case 9:
 			break;
 
-
 		// Si no entra ninguna opcion saltara el error TypeNotPresentExcetion
 		default:
 			System.out.println("No has introducido una opción valida.");
 		}
-
-		
 
 	}
 

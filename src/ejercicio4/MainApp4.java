@@ -10,23 +10,17 @@ public class MainApp4 {
 		Operaciones op = new Operaciones();
 		int opcion;
 
-		try {
-			utl.abrirScanner();
-			utl.imprimirMenu();
+		utl.abrirScanner();
+		utl.imprimirMenu();
 
-			do {
+		do {
 
-				opcion = utl.seleccionarOpcion();
+			opcion = utl.seleccionarOpcion();
 
-				op.realizarOperacion(opcion);
-				
-			} while (opcion >=1 && opcion<9);
-			utl.cerrarScanner();
-			
+			op.realizarOperacion(opcion);
 
-		} catch (Exception e) {
-
-		}
+		} while (opcion >= 1 && opcion < 9);
+		utl.cerrarScanner();
 
 	}
 
