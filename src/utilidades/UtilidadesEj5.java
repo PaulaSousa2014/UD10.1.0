@@ -1,8 +1,7 @@
 package utilidades;
 
-import ejercicio5.Password;
-import java.util.Scanner;
 
+import java.util.Scanner;
 import ejercicio5.Password;
 
 public class UtilidadesEj5 {
