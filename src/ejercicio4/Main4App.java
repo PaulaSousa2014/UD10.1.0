@@ -2,7 +2,7 @@ package ejercicio4;
 
 import utilidades.UtilidadesEj4;
 
-public class MainApp4 {
+public class Main4App {
 
 	public static void main(String[] args) {
 		
