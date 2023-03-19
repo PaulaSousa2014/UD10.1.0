@@ -1,6 +1,10 @@
 package customizedException;
 
 public class MyExceptionEx3 extends Exception{
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -7867880898926269564L;
 	private int exceptionCode;
 
 	public MyExceptionEx3(int error) {

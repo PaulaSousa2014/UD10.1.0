@@ -8,6 +8,11 @@ package customizedException;
 
 public class MyExceptionMessage extends Exception {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
 	public MyExceptionMessage(String errorMessage) {
 		super(errorMessage);
 
