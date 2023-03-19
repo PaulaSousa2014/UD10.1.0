@@ -17,14 +17,15 @@ public class UtilidadesEj5 {
 
 		for (int i = 0; i < passArray.length; i++) {
 
-			String pass=crearPass();
-			if(pass!=null) {
-				passArray[i] = pass;
-				System.out.println("Contraseña generada:\n"+pass+"\n");	
+			String passC=crearPass();
+			if(passC!=null) {
+				passArray[i] = passC;
+				System.out.println("Contraseña generada: "+passC+"   esFuerte: "+pass.esFuerte(passC));	
+				
 			}
 				
 		}
-		System.out.println("Has creado "+passArray.length+ " contraseñas: ");
+		System.out.println("\nHas creado "+passArray.length+ " contraseñas: ");
 		for (int j = 0; j < passArray.length; j++) {
 	        System.out.println("Contraseña "+ (j+1)+": "+passArray[j]);
 	    }

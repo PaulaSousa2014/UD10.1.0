@@ -67,6 +67,7 @@ public class Password {
 
 			if (esFuerte(passPrueba)) {
 				pass = passPrueba;
+				
 			}
 		} while (pass == null);
 
